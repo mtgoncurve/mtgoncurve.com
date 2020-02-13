@@ -1,0 +1,54 @@
+{
+  "name": "mtgoncurve.com",
+  "version": "0.1.0",
+  "description": "https://mtgoncurve.com source code",
+  "main": "index.js",
+  "bin": {
+    "create-wasm-app": ".bin/create-wasm-app.js"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "webpack --mode=production",
+    "postbuild": "cp ./_redirects ./dist",
+    "start": "webpack-dev-server --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rustwasm/create-wasm-app.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack",
+    "mtg"
+  ],
+  "author": "Justin Shrake <JustinShrake@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtgoncurve/mtgoncurve.com/issues"
+  },
+  "homepage": "https://github.com/mtgoncurve/mtgoncurve.com#readme",
+  "dependencies": {
+    "@mtgoncurve/landlord": "^0.0.8",
+    "bulma": "^0.8.0",
+    "mana-font": "^1.6.0",
+    "terser": "^4.6.3",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "vue-loader": "^15.8.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.2"
+  }
+}

@@ -1,0 +1,2 @@
+# Redirect any to home. We're a vue SPA and this is what vue-router needs to work
+/* /index.html 200
