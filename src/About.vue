@@ -59,11 +59,11 @@
         have sufficient mana to pay the cost of the card by some turn. By default, the turn is the CMC cost of the card (the on curve turn), but this can be overriden by specifying a turn modifier for the card (see the Advanced section below).
         These counts are used to calculate the various probabilities in the results table:
         <ul>
-          <li><span class="has-text-weight-semibold">P(mana|draw)</span>: The probability to pay the mana cost by the turn, conditional on drawing turn land cards. Cards with P(mana|turn) >= 90% are highlighted in blue.<br/>
+          <li><span class="has-text-weight-semibold">P(mana|turn)</span>: The probability to pay the mana cost by the turn, conditional on drawing turn land cards. Cards with P(mana|turn) >= 90% are highlighted in blue.<br/>
           This is the same number Frank Karsten calculates in order to determine if a deck can consistently cast a card on curve.</li>
           <li><span class="has-text-weight-semibold">P(mana)</span>: The unconditional probability pay the mana cost by the turn.</li>
           <li><span class="has-text-weight-semibold">P(play)</span>: The unconditional probability pay the mana cost and have at least one copy of the card in hand by the turn. This is how often in practice you can expect to play a card by the turn.</li>
-          <li><span class="has-text-weight-semibold">P(tapped|draw)</span>: The probability to fail to pay the mana cost by the turn due to a tap land, conditional on drawing turn land cards.</li>
+          <li><span class="has-text-weight-semibold">P(tapped|turn)</span>: The probability to fail to pay the mana cost by the turn due to a tap land, conditional on drawing turn land cards.</li>
         </ul>
         The simulation makes several assumptions in order to simplify the implementation:
         <ul>
