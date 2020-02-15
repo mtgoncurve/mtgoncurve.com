@@ -6,29 +6,45 @@
           <th>Count</th>
           <th>Card</th>
           <th>Cost</th>
-          <th>Turn</th>
           <th>
-            <span class="probability">
+            <span
+              title="The turn to play the card. Defaults to the card CMC, which corresponds to playing the card on curve."
+            >Turn</span>
+          </th>
+          <th>
+            <span
+              class="probability"
+              title="The probability to pay the mana cost by the turn, conditional on drawing turn land cards. Cards with P(mana|turn) >= 90% are highlighted in blue."
+            >
               P
-              <sub>mana|draw</sub>
+              <sub>mana|turn</sub>
             </span>
           </th>
           <th>
-            <span class="probability">
+            <span
+              class="probability"
+              title="The unconditional probability pay the mana cost by the turn."
+            >
               P
               <sub>mana</sub>
             </span>
           </th>
           <th class="rotate">
-            <span class="probability">
+            <span
+              class="probability"
+              title="The unconditional probability pay the mana cost and have at least one copy of the card in hand by the turn."
+            >
               P
               <sub>play</sub>
             </span>
           </th>
           <th v-if="showTapped">
-            <span class="probability">
+            <span
+              class="probability"
+              title="The probability to fail to pay the mana cost by the turn due to a tap land, conditional on drawing turn land cards."
+            >
               P
-              <sub>tapped|draw</sub>
+              <sub>tapped|turn</sub>
             </span>
           </th>
         </tr>
@@ -123,7 +139,6 @@ export default {
     }
   },
   computed: {
-  
     showTapped() {
       const stats = this.$store.state.outputs.accumulated_stats;
       return (
