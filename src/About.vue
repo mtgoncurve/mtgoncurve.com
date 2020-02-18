@@ -24,7 +24,7 @@
         <h2 subtitle="h2">Usage</h2>
         <hr />
         <div class="level">
-          <img src="./usage.png"/>
+          <img src="./usage.png" />
         </div>
         <ol type="1">
           <li>Export (copy to your clipboard) a deck list from the MTGArena client or your favorite deck website.</li>
@@ -39,9 +39,8 @@
         <h2 subtitle="h2">Interpreting the results</h2>
         <hr />
         <div class="level">
-          <img class="level-item" src="./results.png"/>
-        </div>
-        Read the following articles for context:
+          <img class="level-item" src="./results.png" />
+        </div>Read the following articles for context:
         <ul>
           <li>
             <a
@@ -53,30 +52,49 @@
               href="https://www.channelfireball.com/articles/how-many-colored-mana-sources-do-you-need-to-consistently-cast-your-spells-a-guilds-of-ravnica-update/"
             >How Many Colored Mana Sources Do You Need to Consistently Cast Your Spells? A Guilds of Ravnica Update</a> by Frank Karsten
           </li>
-          <li><a href="https://en.wikipedia.org/wiki/Conditional_probability">Conditional probability</a></li>
-        </ul>
-        MTG On Curve simulates 1,000,000 random hands from the specified deck list and mulligan strategy and for each non-land card in the deck, counts the number of hands that
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Conditional_probability">Conditional probability</a>
+          </li>
+        </ul>MTG On Curve simulates 1,000,000 random hands from the specified deck list and mulligan strategy and for each non-land card in the deck, counts the number of hands that
         have sufficient mana to pay the cost of the card by some turn. By default, the turn is the CMC cost of the card (the on curve turn), but this can be overriden by specifying a turn modifier for the card (see the Advanced section below).
         These counts are used to calculate the various probabilities in the results table:
         <ul>
-          <li><span class="has-text-weight-semibold">P(mana|turn)</span>: The probability to pay the mana cost by the turn, conditional on drawing turn land cards. Cards with P(mana|turn) >= 90% are highlighted in blue.<br/>
-          This is the same number Frank Karsten calculates in order to determine if a deck can consistently cast a card on curve.</li>
-          <li><span class="has-text-weight-semibold">P(mana)</span>: The unconditional probability pay the mana cost by the turn.</li>
-          <li><span class="has-text-weight-semibold">P(play)</span>: The unconditional probability pay the mana cost and have at least one copy of the card in hand by the turn. This is how often in practice you can expect to play a card by the turn.</li>
-          <li><span class="has-text-weight-semibold">P(tapped|turn)</span>: The probability to fail to pay the mana cost by the turn due to a tap land, conditional on drawing turn land cards.</li>
-        </ul>
-        The simulation makes several assumptions in order to simplify the implementation:
+          <li>
+            <span class="has-text-weight-semibold">P(mana|turn)</span>: The probability to pay the mana cost by the turn, conditional on drawing turn land cards. Cards with P(mana|turn) >= 90% are highlighted in blue.
+            <br />This is the same number Frank Karsten calculates in order to determine if a deck can consistently cast a card on curve.
+          </li>
+          <li>
+            <span class="has-text-weight-semibold">P(mana)</span>: The unconditional probability pay the mana cost by the turn.
+          </li>
+          <li>
+            <span class="has-text-weight-semibold">P(play)</span>: The unconditional probability pay the mana cost and have at least one copy of the card in hand by the turn. This is how often in practice you can expect to play a card by the turn.
+          </li>
+          <li>
+            <span class="has-text-weight-semibold">P(tapped|turn)</span>: The probability to fail to pay the mana cost by the turn due to a tap land, conditional on drawing turn land cards.
+          </li>
+        </ul>The simulation makes several assumptions in order to simplify the implementation:
         <ul>
           <li>The only card draw comes from the card draw step at the beginning of each turn.</li>
           <li>Only cards listed in the "Mana Sources" table are used to calculate paying the cost of a card. You can force a card to count as a mana source, or override the mana sources of an existing land card, by specifying a mana modifier for the card (see the Advanced section below).</li>
-          <li>All land cards come into play untapped, except for tap lands, which are denoted by kind "Tap" in the "Mana Sources" table.</li> 
-          <li>Card abilities such as convoke or delve are not simulated.</li> 
-        </ul>
+          <li>All mana sources come into play untapped.</li>
+          <li>All mana sources come into play untapped, except for tap lands, which are denoted by kind "Tap" in the "Mana Sources" table.</li>
+          <li>Card abilities that alter the cost of a card, such as convoke or delve, are not simulated.</li>
+          <li>Card abilities that alter the mulligan process, such as Serum Powder, are not simulated</li>
+          <li>Card abilities that alter the starting hand size are not simulated</li>
+          <li>Card abilities that alter the starting cards in hand are not simulated.</li>
+          <li>The MTG Arena best-of-one starting hand implementation is not simulated.</li>
+          <li>Phyrexian mana is not simulated.</li>
+        </ul>So what is the simulation capable of modeling?
+        <ul>
+          <li>Implements the London mulligan process.</li>
+          <li>Handles cards that cost multiple mana colors.</li>
+          <li>Handles lands that source multiple mana colors.</li>
+          <li>Handles cards with hybrid mana costs.</li>
+        </ul>The goal of this tool is not to simulate all the game mechanics, but to give users a baseline from which they can make informed decisions about their deck and manabase. It is up to you to use your best judement when interpreting the results.
         <h2 subtitle="h2">Advanced</h2>
-        <hr />
-        You can specify card modifiers to change attributes such as the turn a card is played, the X mana cost of a card, and even force a card to behave as a land card with specific mana sources.
+        <hr />You can specify card modifiers to change attributes such as the turn a card is played, the X mana cost of a card, and even force a card to behave as a land card with specific mana sources.
         <div class="level">
-          <img class="level-item" src="./advanced.png"/>
+          <img class="level-item" src="./advanced.png" />
         </div>
         <ul>
           <li>
