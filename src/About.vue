@@ -76,7 +76,6 @@
         <ul>
           <li>The only card draw comes from the card draw step at the beginning of each turn.</li>
           <li>Only cards listed in the "Mana Sources" table are used to calculate paying the cost of a card. You can force a card to count as a mana source, or override the mana sources of an existing land card, by specifying a mana modifier for the card (see the Advanced section below).</li>
-          <li>All mana sources come into play untapped.</li>
           <li>All mana sources come into play untapped, except for tap lands, which are denoted by kind "Tap" in the "Mana Sources" table.</li>
           <li>Card abilities that alter the cost of a card, such as convoke or delve, are not simulated.</li>
           <li>Card abilities that alter the mulligan process, such as Serum Powder, are not simulated</li>
@@ -86,10 +85,10 @@
           <li>Phyrexian mana is not simulated.</li>
         </ul>So what is the simulation capable of modeling?
         <ul>
-          <li>Implements the London mulligan process.</li>
-          <li>Handles cards that cost multiple mana colors.</li>
-          <li>Handles lands that source multiple mana colors.</li>
-          <li>Handles cards with hybrid mana costs.</li>
+          <li>The London mulligan process.</li>
+          <li>Cards that cost multiple mana colors.</li>
+          <li>Cards with hybrid mana costs.</li>
+          <li>Lands that source multiple mana colors.</li>
         </ul>The goal of this tool is not to simulate all the game mechanics, but to give users a baseline from which they can make informed decisions about their deck and manabase. It is up to you to use your best judement when interpreting the results.
         <h2 subtitle="h2">Advanced</h2>
         <hr />You can specify card modifiers to change attributes such as the turn a card is played, the X mana cost of a card, and even force a card to behave as a land card with specific mana sources.
