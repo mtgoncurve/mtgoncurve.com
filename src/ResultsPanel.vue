@@ -38,15 +38,6 @@
               <sub>play</sub>
             </span>
           </th>
-          <th v-if="showTapped">
-            <span
-              class="probability"
-              title="The probability to fail to pay the mana cost by the turn due to a tap land, conditional on drawing turn land cards."
-            >
-              P
-              <sub>tapped|turn</sub>
-            </span>
-          </th>
         </tr>
       </thead>
       <tbody>
@@ -73,7 +64,6 @@
           <td>{{data.p_mana_cmc}}</td>
           <td>{{data.p_mana}}</td>
           <td>{{data.p_play}}</td>
-          <td v-if="showTapped">{{data.p_tapped_cmc}}</td>
         </tr>
       </tbody>
     </table>
@@ -139,15 +129,6 @@ export default {
     }
   },
   computed: {
-    showTapped() {
-      const stats = this.$store.state.outputs.accumulated_stats;
-      return (
-        stats.length &&
-        stats.reduce((s, x) => {
-          return s + x.observations.tapped;
-        }, 0) > 0
-      );
-    },
     tableData: {
       get() {
         return this.$store.state.outputs.accumulated_stats.map(s => {
@@ -158,8 +139,7 @@ export default {
               card_count: s.card_count,
               p_mana: 0.0,
               p_play: 0.0,
-              p_mana_cmc: 0.0,
-              p_tapped_cmc: 0.0
+              p_mana_cmc: 0.0
             };
           } else {
             return {
@@ -174,10 +154,7 @@ export default {
               ),
               p_play: ((s.observations.play / this.runs) * 100 || 0.0).toFixed(
                 2
-              ),
-              p_tapped_cmc: (
-                (s.observations.tapped / s.observations.cmc) * 100 || 0.0
-              ).toFixed(2)
+              )
             };
           }
         });

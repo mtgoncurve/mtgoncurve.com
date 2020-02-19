@@ -69,20 +69,17 @@
           <li>
             <span class="has-text-weight-semibold">P(play)</span>: The unconditional probability pay the mana cost and have at least one copy of the card in hand by the turn. This is how often in practice you can expect to play a card by the turn.
           </li>
-          <li>
-            <span class="has-text-weight-semibold">P(tapped|turn)</span>: The probability to fail to pay the mana cost by the turn due to a tap land, conditional on drawing turn land cards.
-          </li>
         </ul>The simulation makes several assumptions in order to simplify the implementation:
         <ul>
           <li>The only card draw comes from the card draw step at the beginning of each turn.</li>
           <li>Only cards listed in the "Mana Sources" table are used to calculate paying the cost of a card. You can force a card to count as a mana source, or override the mana sources of an existing land card, by specifying a mana modifier for the card (see the Advanced section below).</li>
-          <li>All mana sources come into play untapped, except for tap lands, which are denoted by kind "Tap" in the "Mana Sources" table.</li>
+          <li>All mana sources come into play untapped.</li>
           <li>Card abilities that alter the cost of a card, such as convoke or delve, are not simulated.</li>
           <li>Card abilities that alter the mulligan process, such as Serum Powder, are not simulated</li>
           <li>Card abilities that alter the starting hand size are not simulated</li>
           <li>Card abilities that alter the starting cards in hand are not simulated.</li>
-          <li>The MTG Arena best-of-one starting hand implementation is not simulated.</li>
           <li>Phyrexian mana is not simulated.</li>
+          <li>The MTG Arena best-of-one starting hand implementation is not simulated.</li>
         </ul>So what is the simulation capable of modeling?
         <ul>
           <li>The London mulligan process.</li>
