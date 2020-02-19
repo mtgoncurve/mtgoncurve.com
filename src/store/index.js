@@ -34,32 +34,32 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    base64EncodedInputs({inputs}) {
+    base64EncodedInputs({ inputs }) {
       return btoa(JSON.stringify(inputs));
     }
   },
   actions: {
-    update({commit, dispatch}, inputs) {
+    update({ commit, dispatch }, inputs) {
       commit('setInputs', inputs);
       commit('clearAccumulatedOutputs');
       dispatch('postWork');
     },
-    initializeWithBase64Encoding({commit, dispatch}, encoding) {
+    initializeWithBase64Encoding({ commit, dispatch }, encoding) {
       commit('setInputsWithBase64Encoding', encoding);
       commit('clearAccumulatedOutputs');
       dispatch('postWork');
     },
     // {commit, state} is ES2015 argument destructuring of the context
     // object
-    postWork({commit, dispatch, state}) {
+    postWork({ commit, dispatch, state }) {
       this.task_id += 1;
       const cards_to_keep_string = state.inputs.cards_to_keep;
       const card_sets_to_keep =
-          cards_to_keep_string.split(/^\s*\n/gm).map(s => s.trim());
+        cards_to_keep_string.split(/^\s*\n/gm).map(s => s.trim());
       const card_sets_to_keep_split =
-          card_sets_to_keep.map(s => s.split(/\r?\n/).map(s => s.trim()));
+        card_sets_to_keep.map(s => s.split(/\r?\n/).map(s => s.trim()));
       const acceptable_hand_list =
-          cards_to_keep_string.length == 0 ? [] : card_sets_to_keep_split;
+        cards_to_keep_string.length == 0 ? [] : card_sets_to_keep_split;
       // console.log(acceptable_hand_list);
 
       // WARN(jshrake): The follwing schema MUST be
@@ -78,7 +78,7 @@ export default new Vuex.Store({
       };
       this.worker.postMessage(data);
     },
-    spawnWorker({commit, dispatch, state}) {
+    spawnWorker({ commit, dispatch, state }) {
       this.task_id = 0;
       // Start a fresh worker
       this.worker = new window.Worker('landlord.worker.js');
@@ -93,7 +93,7 @@ export default new Vuex.Store({
           dispatch('postWork');
         } else if (e.data.task_id == this.task_id) {
           if (typeof e.data.results == 'string' ||
-              e.data.results instanceof String) {
+            e.data.results instanceof String) {
             commit('setResultError', e.data.results);
           } else {
             commit('accumulate', e.data);
@@ -126,7 +126,7 @@ export default new Vuex.Store({
         state.outputs.deck_average_cmc = 0;
       }
     },
-    accumulate(state, {results, runs}) {
+    accumulate(state, { results, runs }) {
       if (state.outputs.accumulated_runs == 0) {
         const {
           card_observations,
@@ -140,25 +140,23 @@ export default new Vuex.Store({
         state.outputs.accumulated_stats = card_observations;
         state.outputs.land_stats = land_stats;
         state.outputs.accumulated_opening_hand_size =
-            accumulated_opening_hand_size;
+          accumulated_opening_hand_size;
         state.outputs.accumulated_opening_hand_land_count =
-            accumulated_opening_hand_land_count;
+          accumulated_opening_hand_land_count;
         state.outputs.deck_average_cmc = deck_average_cmc;
       } else {
         for (let i = 0; i < results.card_observations.length; i++) {
           state.outputs.accumulated_stats[i].observations.mana +=
-              results.card_observations[i].observations.mana;
+            results.card_observations[i].observations.mana;
           state.outputs.accumulated_stats[i].observations.cmc +=
-              results.card_observations[i].observations.cmc;
+            results.card_observations[i].observations.cmc;
           state.outputs.accumulated_stats[i].observations.play +=
-              results.card_observations[i].observations.play;
-          state.outputs.accumulated_stats[i].observations.tapped +=
-              results.card_observations[i].observations.tapped;
+            results.card_observations[i].observations.play;
         }
         state.outputs.accumulated_opening_hand_size +=
-            results.accumulated_opening_hand_size;
+          results.accumulated_opening_hand_size;
         state.outputs.accumulated_opening_hand_land_count +=
-            results.accumulated_opening_hand_land_count;
+          results.accumulated_opening_hand_land_count;
       }
       state.outputs.accumulated_runs += runs;
     }
