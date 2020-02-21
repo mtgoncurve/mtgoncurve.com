@@ -60,14 +60,14 @@
         These counts are used to calculate the various probabilities in the results table:
         <ul>
           <li>
-            <span class="has-text-weight-semibold">P(mana|turn)</span>: The probability to pay the mana cost by the turn, conditional on drawing turn land cards. Cards with P(mana|turn) >= 90% are highlighted in blue.
+            <span class="has-text-weight-semibold">P(mana|turn)</span>: The probability to pay the mana cost by turn N, conditional on drawing at least N mana sources. Cards with P(mana|turn) >= 90% are highlighted in blue.
             <br />This is the same number Frank Karsten calculates in order to determine if a deck can consistently cast a card on curve.
           </li>
           <li>
-            <span class="has-text-weight-semibold">P(mana)</span>: The unconditional probability pay the mana cost by the turn.
+            <span class="has-text-weight-semibold">P(mana)</span>: The unconditional probability to pay the mana cost by the turn.
           </li>
           <li>
-            <span class="has-text-weight-semibold">P(play)</span>: The unconditional probability pay the mana cost and have at least one copy of the card in hand by the turn. This is how often in practice you can expect to play a card by the turn.
+            <span class="has-text-weight-semibold">P(play)</span>: The unconditional probability to pay the mana cost and have at least one copy of the card in hand by the turn.
           </li>
         </ul>The simulation makes several assumptions in order to simplify the implementation:
         <ul>
@@ -86,7 +86,7 @@
           <li>Cards that cost multiple mana colors.</li>
           <li>Cards with hybrid mana costs.</li>
           <li>Lands that source multiple mana colors.</li>
-        </ul>The goal of this tool is not to simulate all the game mechanics, but to give users a baseline from which they can make informed decisions about their deck and manabase. It is up to you to use your best judement when interpreting the results.
+        </ul>The goal of this project is not to simulate every game mechanic, but to give users a sensible baseline from which they can make informed decisions about their deck and manabase. It is up to you to use your best judement when interpreting the results.
         <h2 subtitle="h2">Advanced</h2>
         <hr />You can specify card modifiers to change attributes such as the turn a card is played, the X mana cost of a card, and even force a card to behave as a land card with specific mana sources.
         <div class="level">

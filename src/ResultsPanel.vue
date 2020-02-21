@@ -14,7 +14,7 @@
           <th>
             <span
               class="probability"
-              title="The probability to pay the mana cost by the turn, conditional on drawing turn land cards. Cards with P(mana|turn) >= 90% are highlighted in blue."
+              title="The probability to pay the mana cost by turn N, conditional on drawing at least N mana sources. Cards with P(mana|turn) >= 90% are highlighted in blue."
             >
               P
               <sub>mana|turn</sub>
@@ -23,7 +23,7 @@
           <th>
             <span
               class="probability"
-              title="The unconditional probability pay the mana cost by the turn."
+              title="The unconditional probability to pay the mana cost by the turn."
             >
               P
               <sub>mana</sub>
@@ -32,7 +32,7 @@
           <th class="rotate">
             <span
               class="probability"
-              title="The unconditional probability pay the mana cost and have at least one copy of the card in hand by the turn."
+              title="The unconditional probability to pay the mana cost and have at least one copy of the card in hand by the turn."
             >
               P
               <sub>play</sub>
