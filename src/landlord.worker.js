@@ -1,6 +1,6 @@
 import('@mtgoncurve/landlord').then(landlord => {
   // the thing that does work
-  self.onmessage = function (e) {
+  self.onmessage = function(e) {
     //console.log('Running simulation...');
     if (this.interval) {
       this.clearInterval(this.interval);
@@ -16,7 +16,7 @@ import('@mtgoncurve/landlord').then(landlord => {
         return;
       }
       // results is the same shape as `Output` in https://github.com/mtgoncurve/landlord/lib/src/mtgoncruve.rs
-      const results = landlord.run(input);
+      const results = landlord.mtgoncurve_run(input);
       self.postMessage({
         results: results,
         runs: input.runs,
@@ -32,5 +32,4 @@ import('@mtgoncurve/landlord').then(landlord => {
   };
   // Inform the main thread that our onmessage handler is configured and ready to receive
   // postMessage requests
-  self.postMessage(true);
-});
+  self.postMessage(true);});
