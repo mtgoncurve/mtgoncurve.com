@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@mtgoncurve/landlord@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.2.2.tgz#5eb30fc2e18e9c01af831cf2fd9385cc0e2be69f"
-  integrity sha512-5Gu28Ecq8bxwXFTa/NXpM2ChQKme6o80oIjVEd+QHy+4Gfm2xitbH6Goc6G8NlEpLAyVVX/BAuEtPJFpHCX+NQ==
+"@mtgoncurve/landlord@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.3.0.tgz#e82206255cb76bd19dc382701bb269f62cb1d334"
+  integrity sha512-Z+cISXQh0dip07H4DGGn+LcdCimaMIa3bRpNB2CktH2XgI0THw4Mvli00CkgXgNr4cft9sqldBmSaU5zANxNKQ==
 
 "@types/events@*":
   version "3.0.0"
