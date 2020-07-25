@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@mtgoncurve/landlord@^0.4.3":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.4.3.tgz#dc2fa393eacd34ba74227747e065614735a47ac0"
-  integrity sha512-DKhFIrDFivUM0Y/pAYNK6rLrIADKTgqluBiTANEs6jcx0dJFj9ofrjrb78TIjTDn1oaqSadnvASmARBKEiXmPw==
+"@mtgoncurve/landlord@^0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.4.4.tgz#823d0a0108c64b610fe99628590ddaa5838b3db2"
+  integrity sha512-6sH8KAMjEgIujSNKOHqc8ULTvHmVko+D4WSCuEBlWy7Bf7mHYYlJfnxmf36T64+PCIaFInALu+J45UdM72kUKg==
 
 "@types/glob@^7.1.1":
   version "7.1.2"
@@ -2645,9 +2645,9 @@ locate-path@^3.0.0:
     path-exists "^3.0.0"
 
 lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@~4.17.10:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 loglevel@^1.6.8:
   version "1.6.8"
