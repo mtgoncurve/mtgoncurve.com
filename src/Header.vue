@@ -11,8 +11,6 @@
     <div class="navbar-menu is-active">
       <div class="navbar-start">
         <router-link class="navbar-item" to="/about">About</router-link>
-        <a class="navbar-item" href="https://twitter.com/mtgoncurve">Twitter</a>
-        <a class="navbar-item" href="https://discord.gg/We4D5sE">Discord</a>
         <a class="navbar-item" href="https://github.com/mtgoncurve">Github</a>
         <a class="navbar-item" href="https://github.com/mtgoncurve/mtgoncurve.com">Last Updated: {{last_updated()}}</a>
       </div>
