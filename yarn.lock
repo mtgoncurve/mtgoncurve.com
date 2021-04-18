@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@mtgoncurve/landlord@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.5.0.tgz#239668899c7e20b40bc9f1069652e2cc76875eb8"
-  integrity sha512-qynnx2EJqM9o/RI9RztU8u81IK21XFIgZUc3Y69xIMuJqreD8hhU4mQhNQ33y9DBN3bPpvsTAY7jQlRu84nN/w==
+"@mtgoncurve/landlord@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.5.2.tgz#5bbc9a4eef99a4b3c6a8913a7f2f8e9ef89ee802"
+  integrity sha512-4AmMSuCylbLH9tM+HYJG65SYV4qLaq3m9LKccxJNKtsa52/REl9DZPBw59QxuePKolD2nMEsd+2ZHnzocjaPbQ==
 
 "@types/glob@^7.1.1":
   version "7.1.2"
@@ -4211,9 +4211,9 @@ sshpk@^1.7.0:
     tweetnacl "~0.14.0"
 
 ssri@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
-  integrity sha512-3Wge10hNcT1Kur4PDFwEieXSCMCJs/7WvSACcrMYrNp+b8kDL1/0wJch5Ni2WrtwEa2IO8OsVfeKIciKCDx/QA==
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.2.tgz#157939134f20464e7301ddba3e90ffa8f7728ac5"
+  integrity sha512-cepbSq/neFK7xB6A50KHN0xHDotYzq58wWCa5LeWqnPrHG8GzfEjO/4O8kpmcGW+oaxkvhEJCWgbgNk4/ZV93Q==
   dependencies:
     figgy-pudding "^3.5.1"
 
