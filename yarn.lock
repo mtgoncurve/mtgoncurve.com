@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@mtgoncurve/landlord@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.7.1.tgz#1fcc2b193d7223550db8a3d8660ed3264b730115"
-  integrity sha512-uDbYcXhToUZFPEgoT6CA/BprFqj1x46CQWLw0zXV53kG3ONJxDy87FdJ03FMbp7gxrbWbRy4kJ81X+g4ctgcRA==
+"@mtgoncurve/landlord@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.8.0.tgz#9437cb22da5babc66f8fab9905ed4baedca2045a"
+  integrity sha512-pfLv4FKL6vt9Fy51/fvVnRxa/e0LP4M+rA+tdNQQZ0LmYOCz638vw/oihJvoro1eTZzoyejG9caLdQT92qXHpQ==
 
 "@types/glob@^7.1.1":
   version "7.1.2"
@@ -3319,9 +3319,9 @@ path-key@^2.0.0, path-key@^2.0.1:
   integrity sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
