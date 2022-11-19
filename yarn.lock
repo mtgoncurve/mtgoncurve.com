@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@mtgoncurve/landlord@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.8.0.tgz#9437cb22da5babc66f8fab9905ed4baedca2045a"
-  integrity sha512-pfLv4FKL6vt9Fy51/fvVnRxa/e0LP4M+rA+tdNQQZ0LmYOCz638vw/oihJvoro1eTZzoyejG9caLdQT92qXHpQ==
+"@mtgoncurve/landlord@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.9.0.tgz#a4badaac841d7761560cbc8b31e0e52d90c8b08f"
+  integrity sha512-qKdi9vY5msULAKH+2xA32hzx1zgwyVEQSOKeQtQnRSpha7V3Htb1dSQVtqPsVSfU9LhzqpwR24Wa79CwUYuzUg==
 
 "@types/glob@^7.1.1":
   version "7.1.2"
@@ -1695,9 +1695,9 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.3.6"
 
 follow-redirects@^1.0.0:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.12.1.tgz#de54a6205311b93d60398ebc01cf7015682312b6"
-  integrity sha512-tmRv0AVuR7ZyouUHLeNSiO6pqulF7dYa3s19c6t+wz9LD69/uSzdMxJ2S91nTI9U3rt/IldxpzMOFejp6f0hjg==
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
+  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
 
 for-in@^1.0.2:
   version "1.0.2"
