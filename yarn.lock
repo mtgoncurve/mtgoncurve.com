@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@mtgoncurve/landlord@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.8.0.tgz#9437cb22da5babc66f8fab9905ed4baedca2045a"
-  integrity sha512-pfLv4FKL6vt9Fy51/fvVnRxa/e0LP4M+rA+tdNQQZ0LmYOCz638vw/oihJvoro1eTZzoyejG9caLdQT92qXHpQ==
+"@mtgoncurve/landlord@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@mtgoncurve/landlord/-/landlord-0.9.0.tgz#a4badaac841d7761560cbc8b31e0e52d90c8b08f"
+  integrity sha512-qKdi9vY5msULAKH+2xA32hzx1zgwyVEQSOKeQtQnRSpha7V3Htb1dSQVtqPsVSfU9LhzqpwR24Wa79CwUYuzUg==
 
 "@types/glob@^7.1.1":
   version "7.1.2"
@@ -1453,11 +1453,9 @@ events@^3.0.0:
   integrity sha512-Rv+u8MLHNOdMjTAFeT3nCjHn2aGlx435FP/sDHNaRhDEMwyI/aB22Kj2qIN8R0cw3z28psEQLYwxVKLsKrMgWg==
 
 eventsource@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.0.7.tgz#8fbc72c93fcd34088090bc0a4e64f4b5cee6d8d0"
-  integrity sha512-4Ln17+vVT0k8aWq+t/bF5arcS3EpT9gYtW66EPacdj/mAFevznsnyoHLPy2BA8gbIQeIHoPsvwmfBftfcG//BQ==
-  dependencies:
-    original "^1.0.0"
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.1.2.tgz#bc75ae1c60209e7cb1541231980460343eaea7c2"
+  integrity sha512-xAH3zWhgO2/3KIniEKYPr8plNSzlGINOUqYj0m0u7AB81iRw8b/3E73W6AuU+6klLbaSFmZnaETQ2lXPfAydrA==
 
 evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
   version "1.0.3"
@@ -3166,13 +3164,6 @@ opn@^5.5.0:
   integrity sha512-PqHpggC9bLV0VeWcdKhkpxY+3JTzetLSqTCWL/z/tFIbI6G8JCjondXklT1JinczLz2Xib62sSp0T/gKT4KksA==
   dependencies:
     is-wsl "^1.1.0"
-
-original@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/original/-/original-1.0.2.tgz#e442a61cffe1c5fd20a65f3261c26663b303f25f"
-  integrity sha512-hyBVl6iqqUOJ8FqRe+l/gS8H+kKYjrEndd5Pm1MfBtsEKA038HkkdbAl/72EAXGyonD/PFsvmVG+EvcIpliMBg==
-  dependencies:
-    url-parse "^1.4.3"
 
 os-browserify@^0.3.0:
   version "0.3.0"
