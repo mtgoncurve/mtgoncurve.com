@@ -12,7 +12,8 @@
       <div class="navbar-start">
         <router-link class="navbar-item" to="/about">About</router-link>
         <a class="navbar-item" href="https://github.com/mtgoncurve">Github</a>
-        <a class="navbar-item" href="https://github.com/mtgoncurve/mtgoncurve.com">Last Updated: {{last_updated()}}</a>
+        <a class="navbar-item" href="https://github.com/mtgoncurve/mtgoncurve.com">Updated for Murders at Karlov Manor</a>
+        <a class="navbar-item" href="https://cardgamecalculator.com">Hypergeometric Calculator</a>
       </div>
       <div class="navbar-end">
          <div class="navbar-item">
