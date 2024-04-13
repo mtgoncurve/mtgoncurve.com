@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/mtgoncurve/mtgoncurve.com#readme",
   "dependencies": {
-    "@mtgoncurve/landlord": "^2024.2.0",
+    "@mtgoncurve/landlord": "^2024.4.0",
     "bulma": "^0.8.0",
     "mana-font": "^1.6.0",
     "sass": "^1.72.0",
