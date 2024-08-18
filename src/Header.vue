@@ -12,7 +12,7 @@
       <div class="navbar-start">
         <router-link class="navbar-item" to="/about">About</router-link>
         <a class="navbar-item" href="https://github.com/mtgoncurve">Github</a>
-        <a class="navbar-item" href="https://github.com/mtgoncurve/mtgoncurve.com">Updated for Outlaws of Thunder Junction (OTJ)</a>
+        <a class="navbar-item" href="https://github.com/mtgoncurve/mtgoncurve.com">Updated for Bloomburrow (BLB)</a>
         <a class="navbar-item" href="https://cardgamecalculator.com">Hypergeometric Calculator</a>
       </div>
       <div class="navbar-end">
