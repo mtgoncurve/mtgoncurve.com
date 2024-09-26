@@ -81,10 +81,15 @@ Runaway Steam-Kin
       ></textarea>
       </div>
 
-      <label class="label is-small">On the play</label>
-      <div class="field">
-        <input type="checkbox" value="true" v-model="on_the_play" />
-      </div>
+      <fieldset>
+        <legend class="label is-small">First turn</legend>
+        <div class="field">
+          <input type="radio" value="true" v-model="on_the_play" />
+          <label >On the play</label>
+          <input type="radio" value="false" v-model="on_the_play" />
+          <label >On the draw</label>
+        </div>
+      </fieldset>
     </div>
   </div>
 </template>
@@ -137,7 +142,7 @@ export default {
         return this.$store.state.inputs.on_the_play;
       },
       set(val) {
-        this.$store.dispatch("update", { on_the_play: val });
+        this.$store.dispatch("update", { on_the_play: val == "true" });
       }
     },
     mulligan_down_to: {
