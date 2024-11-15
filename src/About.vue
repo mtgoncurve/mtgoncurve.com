@@ -44,13 +44,13 @@
         <ul>
           <li>
             <a
-              href="https://www.channelfireball.com/all-strategy/articles/how-many-lands-do-you-need-to-consistently-hit-your-land-drops/"
-            >How Many Lands Do You Need to Consistently Hit Your Land Drops?</a> by Frank Karsten
+              href="https://www.channelfireball.com/article/How-Many-Lands-Do-You-Need-in-Your-Deck-An-Updated-Analysis/cd1c1a24-d439-4a8e-b369-b936edb0b38a/"
+            >How Many Lands Do You Need in Your Deck? An Updated Analysis</a> by Frank Karsten
           </li>
           <li>
             <a
-              href="https://www.channelfireball.com/articles/how-many-colored-mana-sources-do-you-need-to-consistently-cast-your-spells-a-guilds-of-ravnica-update/"
-            >How Many Colored Mana Sources Do You Need to Consistently Cast Your Spells? A Guilds of Ravnica Update</a> by Frank Karsten
+              href="https://www.channelfireball.com/article/How-Many-Sources-Do-You-Need-to-Consistently-Cast-Your-Spells-A-2022-Update/dc23a7d2-0a16-4c0b-ad36-586fcca03ad8/"
+            >How Many Sources Do You Need to Consistently Cast Your Spells? A 2022 Update</a> by Frank Karsten
           </li>
           <li>
             <a href="https://en.wikipedia.org/wiki/Conditional_probability">Conditional probability</a>
@@ -132,13 +132,13 @@
           </li>
           <li>
             <a
-              href="https://www.channelfireball.com/all-strategy/articles/how-many-lands-do-you-need-to-consistently-hit-your-land-drops/"
-            >How Many Lands Do You Need to Consistently Hit Your Land Drops? by Frank Karsten</a>
+              href="https://www.channelfireball.com/article/How-Many-Lands-Do-You-Need-in-Your-Deck-An-Updated-Analysis/cd1c1a24-d439-4a8e-b369-b936edb0b38a/"
+            >How Many Lands Do You Need in Your Deck? An Updated Analysis</a>
           </li>
           <li>
             <a
-              href="https://www.channelfireball.com/articles/how-many-colored-mana-sources-do-you-need-to-consistently-cast-your-spells-a-guilds-of-ravnica-update/"
-            >How Many Colored Mana Sources Do You Need to Consistently Cast Your Spells? A Guilds of Ravnica Update by Frank Karsten</a>
+              href="https://www.channelfireball.com/article/How-Many-Sources-Do-You-Need-to-Consistently-Cast-Your-Spells-A-2022-Update/dc23a7d2-0a16-4c0b-ad36-586fcca03ad8/"
+            >How Many Sources Do You Need to Consistently Cast Your Spells? A 2022 Update</a>
           </li>
         </ul>
 
